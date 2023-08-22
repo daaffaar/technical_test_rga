@@ -12,16 +12,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 
 public class GoogleFinanceAutomation {
     private static WebDriver driver;
 
     @Test
-    public static void main(String[] args) {
+    public void CheckDifferentPrice() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
